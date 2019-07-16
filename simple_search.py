@@ -46,12 +46,12 @@ class Simple_search:
     def main(self):
         file_path = sys.argv[1]
         while True:
-            search_string = None
+            search_string = ''
             try:
                 search_string = input("search>")
             except:
                 pass
-            if search_string is None:
+            if search_string == "":
                 break
             elif search_string == ":quit":
                 break
