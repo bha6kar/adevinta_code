@@ -17,7 +17,6 @@ class Simple_search:
         top10_filename_with_score_dict = collections.OrderedDict(top10_filename_with_score_list)
         top10_filename_with_score_dict_non_zero = {key:val for key, val in top10_filename_with_score_dict.items() if val != [0.0, []]}
         if len(top10_filename_with_score_dict_non_zero) == 0:
-
             return 0
         top10_filename_with_score_dict= {}
         for file_name, search_match_score in top10_filename_with_score_dict_non_zero.items():
